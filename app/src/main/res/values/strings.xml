@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">LearnComposeM3</string>
+    <string name="title_activity_my_soothie_app">MySoothieApp</string>
+    <string name="nature_meditations">Nature Meditations</string>
+    <string name="inversions">Inversions</string>
+    <string name="quick_yoga">Quick Yoga</string>
+    <string name="stretching">Stretching</string>
+    <string name="tabata">Tabata</string>
+    <string name="align_your_body">ALIGN YOUR BODY</string>
+    <string name="favorite_collection">FAVORITE COLLECTION</string>
 </resources>

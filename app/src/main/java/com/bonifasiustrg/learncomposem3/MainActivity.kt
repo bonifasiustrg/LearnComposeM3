@@ -1,5 +1,6 @@
 package com.bonifasiustrg.learncomposem3
 
+import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -26,15 +27,21 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.bonifasiustrg.learncomposem3.animated_expanded_item.GreetingCard
 import com.bonifasiustrg.learncomposem3.animated_expanded_item.GreetingCardExpandedApp
+import com.bonifasiustrg.learncomposem3.mySoothe.AlignYourBodyRow
+import com.bonifasiustrg.learncomposem3.mySoothe.FavoriteCollectionsGrid
+import com.bonifasiustrg.learncomposem3.mySoothe.ShootheApp
 import com.bonifasiustrg.learncomposem3.ui.theme.LearnComposeM3Theme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            LearnComposeM3Theme(){
-                GreetingCardExpandedApp(modifier = Modifier.fillMaxSize())
+            LearnComposeM3Theme {
+//                GreetingCardExpandedApp(modifier = Modifier.fillMaxSize())
+//                AlignYourBodyRow()\
+//                FavoriteCollectionsGrid()
             }
+            ShootheApp()
 
         }
     }
