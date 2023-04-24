@@ -37,11 +37,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             LearnComposeM3Theme {
-//                GreetingCardExpandedApp(modifier = Modifier.fillMaxSize())
-//                AlignYourBodyRow()\
-//                FavoriteCollectionsGrid()
+                GreetingCardExpandedApp(modifier = Modifier.fillMaxSize())
+//                ShootheApp()
             }
-            ShootheApp()
 
         }
     }
