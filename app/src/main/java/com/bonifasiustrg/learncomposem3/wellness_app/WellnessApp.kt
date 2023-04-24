@@ -8,10 +8,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.toMutableStateList
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
+
 import com.bonifasiustrg.learncomposem3.wellness_app.ui.theme.LearnComposeM3Theme
 
 class WellnessAppActivity : ComponentActivity() {
@@ -37,21 +37,29 @@ class WellnessAppActivity : ComponentActivity() {
         A water counter to track your water intake.
         A list of wellness tasks to do throughout the day.
 * */
-private fun getWellnessTasks() = List(30) { i -> WellnessTask(i, "Task # $i") }
+//private fun getWellnessTasks() = List(30) { i -> WellnessTask(i, "Task # $i") }
 @Composable
-fun WellnessApp(modifier: Modifier = Modifier) {
+fun WellnessApp(modifier: Modifier = Modifier,
+                wellnessViewModel: WellnessViewModel = viewModel()
+) {
 //    WaterCounter(modifier)
     Column(modifier) {
         StatefulCounter()
 
-        val list  = remember { getWellnessTasks().toMutableStateList() }
+//        val list  = remember { getWellnessTasks().toMutableStateList() } //changed with viewmodel
         WellnessTasksList(
-            list = list,
-            onCloseTask = { task -> list.remove(task) } // lamda func tu remove specified item, and update the next item to to removed item position
-        ) /*{ task ->
+            list = wellnessViewModel.tasks,
+            onCloseTask = { task ->
+                wellnessViewModel.remove(task)
+            },
+            onCheckedTask = {task, checked ->
+                wellnessViewModel.changeTaskChecked(task, checked)
+            }
+        )
+    } /*{ task ->
             list.remove(task)
         }*/
-    }
+
 
 }
 
