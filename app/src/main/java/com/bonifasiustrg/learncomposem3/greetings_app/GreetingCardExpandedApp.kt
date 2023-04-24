@@ -1,4 +1,4 @@
-package com.bonifasiustrg.learncomposem3.animated_expanded_item
+package com.bonifasiustrg.learncomposem3.greetings_app
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.Arrangement

@@ -1,4 +1,4 @@
-package com.bonifasiustrg.learncomposem3.mySoothe
+package com.bonifasiustrg.learncomposem3.my_soothe_app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,7 +8,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
@@ -33,7 +32,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.bonifasiustrg.learncomposem3.R
-import com.bonifasiustrg.learncomposem3.mySoothe.ui.theme.MySootheTheme
+import com.bonifasiustrg.learncomposem3.my_soothe_app.ui.theme.MySootheTheme
 import java.util.*
 
 class MySootheApp : ComponentActivity() {

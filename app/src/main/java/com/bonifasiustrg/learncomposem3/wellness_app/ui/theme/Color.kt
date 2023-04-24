@@ -1,4 +1,4 @@
-package com.bonifasiustrg.learncomposem3.mySoothe.ui.theme
+package com.bonifasiustrg.learncomposem3.wellness_app.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

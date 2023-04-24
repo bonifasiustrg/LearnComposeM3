@@ -1,4 +1,4 @@
-package com.bonifasiustrg.learncomposem3.mySoothe
+package com.bonifasiustrg.learncomposem3.my_soothe_app
 
 import com.bonifasiustrg.learncomposem3.R
 

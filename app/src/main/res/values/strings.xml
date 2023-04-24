@@ -8,4 +8,5 @@
     <string name="tabata">Tabata</string>
     <string name="align_your_body">ALIGN YOUR BODY</string>
     <string name="favorite_collection">FAVORITE COLLECTION</string>
+    <string name="title_activity_wellness_app">WellnessAppActivity</string>
 </resources>

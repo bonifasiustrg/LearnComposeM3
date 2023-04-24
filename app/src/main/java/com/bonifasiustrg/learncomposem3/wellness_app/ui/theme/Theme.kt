@@ -1,4 +1,4 @@
-package com.bonifasiustrg.learncomposem3.mySoothe.ui.theme
+package com.bonifasiustrg.learncomposem3.wellness_app.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -38,7 +38,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun MySootheTheme(
+fun LearnComposeM3Theme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
